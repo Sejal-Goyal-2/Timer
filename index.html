@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="./images.png" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-linear-to-br from-rose-100 via-rose-200 to-rose-300 flex justify-center items-center"
+    >
+      <div class="bg-white/40 p-5 rounded-2xl shadow-xl">
+        <h1
+          class="font-bold text-4xl font-mono text-rose-600 text-center mb-5 p-4"
+        >
+          Timer⌛
+        </h1>
+
+        <h3 class="text-gray-700 font-bold text-lg mb-2 underline">Set Timer</h3>
+        <div class="grid grid-cols-3 gap-8">
+          <input type="number" id="input-hours" class="border-2 border-gray-600 outline-none focus:border-rose-400 rounded-xl mb-4 p-2 text-center" placeholder="Set Hours"/>
+          <input type="number" id="input-min" class="border-2 border-gray-600 outline-none focus:border-rose-400 rounded-xl mb-4 p-2 text-center" placeholder="Set Minutes"/>
+          <input type="number" id="input-sec" class="border-2 border-gray-600 outline-none focus:border-rose-400 rounded-xl mb-4 p-1 text-center" placeholder="Set Seconds"/>
+        </div>
+
+        <div class="grid grid-cols-3 gap-6">
+          <div class="bg-rose-200 p-4 rounded-xl text-center">
+            <span class="font-bold text-4xl text-rose-600" id="hour"></span>
+            <p class="text-gray-700 font-mono">Hours</p>
+          </div>
+          <div class="bg-rose-200 p-4 rounded-xl text-center">
+            <span class="font-bold text-4xl text-rose-600" id="minute"></span>
+            <p class="text-gray-700 font-mono">Minutes</p>
+          </div>
+          <div class="bg-rose-200 p-4 rounded-xl text-center">
+            <span class="font-bold text-4xl text-rose-600" id="second"></span>
+            <p class="text-gray-700 font-mono">seconds</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <button
+            class="bg-rose-500 text-white font-semibold p-2 rounded-xl m-4 font-mono hover:bg-rose-700"
+            id="start-btn"
+          >
+            Start
+          </button>
+          <button
+            class="bg-rose-500 text-white font-semibold p-2 rounded-xl m-4 font-mono hover:bg-rose-700"
+            id="stop-btn"
+          >
+            Stop
+          </button>
+          <button
+            class="bg-rose-500 text-white font-semibold p-2 rounded-xl m-4 font-mono hover:bg-rose-700"
+            id="reset-btn"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
